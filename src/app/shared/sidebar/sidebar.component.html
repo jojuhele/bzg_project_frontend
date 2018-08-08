@@ -6,14 +6,7 @@
             <!-- User profile image -->
             <div class="profile-img"> <img src="assets/images/users/1.jpg" alt="user" /> </div>
             <!-- User profile text-->
-            <div class="profile-text"> <a href="#" class="dropdown-toggle link u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Markarn Doe <span class="caret"></span></a>
-                <div class="dropdown-menu animated flipInY">
-                    <a href="#" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
-                    <a href="#" class="dropdown-item"><i class="ti-wallet"></i> My Balance</a>
-                    <a href="#" class="dropdown-item"><i class="ti-email"></i> Inbox</a>
-                    <div class="dropdown-divider"></div> <a href="#" class="dropdown-item"><i class="ti-settings"></i> Account Setting</a>
-                    <div class="dropdown-divider"></div> <a href="login.html" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
-                </div>
+            <div class="profile-text"> <a href="#" class=" link u-dropdown"  role="button" aria-haspopup="true" aria-expanded="true">Markarn Doe <span class="caret"></span></a>
             </div>
         </div>
         <!-- End User profile text-->
@@ -22,8 +15,18 @@
             <ul id="sidebarnav">
                 <li class="nav-devider"></li>
                 <li [class.active]="showMenu === 'starter'">
-                    <a routerLink="/starter" (click)="addExpandClass('starter')" [routerLinkActive]="['router-link-active']"><i class="mdi mdi-file"></i><span class="hide-menu">Starter Page</span></a>
-                </li>                
+                    <a routerLink="/starter" (click)="addExpandClass('starter')" [routerLinkActive]="['router-link-active']"><i class="mdi mdi-file"></i><span class="hide-menu">Home</span></a>
+                </li> 
+                <li>
+                    <a routerLink="/starter"><i class="fa fa-book"></i><span class="hide-menu">Collection</span></a>
+                </li>
+                <li>
+                    <a routerLink="/starter"><i class="fa fa-heart"></i><span class="hide-menu">Favorites</span></a>
+                </li>
+                <li>
+                    <a routerLink="/starter"><i class="fa fa-power-off"></i><span class="hide-menu">Close</span></a>
+                </li>   
+
                 <li class="nav-small-cap">UI Components</li>
                 <li [class.active]="showMenu === 'component'">
                     <a class="has-arrow" href="javascript:void(0)" (click)="addExpandClass('component')" aria-expanded="false"><i class="mdi mdi-bullseye"></i><span class="hide-menu">Components</span></a>
